@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdministratorActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/relativelayoutborder"
+        android:fitsSystemWindows="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/wendy_one"
+                android:padding="5dp"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="#f5821e"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="191dp"></TextView>
+
+            <TextView
+                android:id="@+id/AddAdminText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/amaranth"
+                android:padding="5dp"
+                android:text="Add Admin"
+                android:textAlignment="center"
+                android:textColor="#CCBABE"
+                android:textSize="22sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Username:"
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textborder"
+                    android:textColor="#9AFFFFFF"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="18dp"
+                    android:padding="5dp"
+                    android:text="Password:"
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textborder"
+                    android:inputType="textPassword"
+                    android:textColor="#9AFFFFFF"></EditText>
+
+                <Button
+                    android:id="@+id/showPass"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/showpassicon"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SignBttn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/modifiedbutton"
+                android:fontFamily="@font/wendy_one"
+                android:padding="5dp"
+                android:text="Signin"
+                android:textColor="#D55D03"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="320dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:padding="5dp"
+                app:dividerColor="@color/orange"></com.google.android.material.divider.MaterialDivider>
+
+            <TextView
+                android:id="@+id/Addscreeningtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amaranth"
+                android:padding="5dp"
+                android:text="Add Screening"
+                android:textAlignment="center"
+                android:textColor="#CCBABE"
+                android:textSize="22sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Movie :"
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/moviemenu"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:text="\u2261 "
+                    android:textAlignment="textEnd"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Auditorium:  "
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/audimenu"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:text="\u2261 "
+                    android:textAlignment="textEnd"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Time:   "
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/timemenu"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:text="\u2261 "
+                    android:textAlignment="textEnd"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SubmitScreeningBttn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/modifiedbutton"
+                android:fontFamily="@font/wendy_one"
+                android:padding="5dp"
+                android:text="Submit"
+                android:textColor="#D55D03"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="320dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:padding="5dp"
+                app:dividerColor="@color/orange"></com.google.android.material.divider.MaterialDivider>
+
+            <TextView
+                android:id="@+id/Auditoriumtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amaranth"
+                android:padding="5dp"
+                android:text="Add Auditorium"
+                android:textAlignment="center"
+                android:textColor="#CCBABE"
+                android:textSize="22sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Id:         "
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <EditText
+                    android:id="@+id/idtext"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Name:         "
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <EditText
+                    android:id="@+id/nametext"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Seats_no:"
+                    android:textColor="#CCBABE"
+                    android:textSize="20sp"></TextView>
+
+                <EditText
+                    android:id="@+id/seatnumbertext"
+                    android:layout_width="180dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textborder"
+                    android:padding="5dp"
+                    android:textColor="#9AFFFFFF"
+                    android:textSize="22sp"></EditText>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SubmitaudiBttn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/modifiedbutton"
+                android:fontFamily="@font/wendy_one"
+                android:padding="5dp"
+                android:text="Submit"
+                android:textColor="#D55D03"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="360dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

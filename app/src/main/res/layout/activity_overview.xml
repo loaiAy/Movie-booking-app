@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".overviewActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/relativelayoutborder"
+        android:fitsSystemWindows="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/wendy_one"
+                android:padding="5dp"
+                android:text="movie name"
+                android:textAlignment="center"
+                android:textColor="#f5821e"
+                android:textSize="28sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="191dp"></TextView>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubeplayerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                app:autoPlay="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/wendy_one"
+                    android:padding="5dp"
+                    android:text="Overview :"
+                    android:textColor="#CCBABE"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <Button
+                    android:id="@+id/purchasebttn"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="140dp"
+                    android:background="@drawable/modifiedbutton"
+                    android:fontFamily="@font/wendy_one"
+                    android:text="purchase"
+                    android:textColor="#f5821e"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/movieoverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/actor"
+                android:padding="5dp"
+                android:text="overview"
+                android:textAlignment="viewStart"
+                android:textColor="#CCBABE"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="191dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/originalmoviename"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/actor"
+                        android:padding="5dp"
+                        android:text="Original name"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/originalmoviename1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/actor"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="Original name"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/language"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/actor"
+                        android:padding="5dp"
+                        android:text="Original language"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/language1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/actor"
+                        android:padding="5dp"
+                        android:text="Original language"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/releasedate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/actor"
+                        android:padding="5dp"
+                        android:text="Release date"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/releasedate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/actor"
+                        android:padding="5dp"
+                        android:text="Release date"
+                        android:textColor="#CCBABE"
+                        android:textSize="15sp"></TextView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

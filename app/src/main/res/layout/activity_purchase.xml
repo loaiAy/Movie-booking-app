@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/relativelayoutborder"
+    tools:context=".purchaseActivity">
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/wendy_one"
+        android:padding="5dp"
+        android:text="movie name"
+        android:textAlignment="center"
+        android:textColor="#f5821e"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/wendy_one"
+        android:padding="5dp"
+        android:text="Contact info"
+        android:textAlignment="center"
+        android:textColor="#f5821e"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieTitle" />
+
+
+    <TextView
+        android:id="@+id/nameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:padding="5dp"
+        android:text="Name:"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/textborder"
+        android:textColor="#CCBABE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nameID"
+        app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+        tools:layout_editor_absoluteY="86dp"></EditText>
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:padding="5dp"
+        android:text="Email:"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameID" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/textborder"
+        android:textColor="#CCBABE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/emailView"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"></EditText>
+
+    <TextView
+        android:id="@+id/phoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:padding="5dp"
+        android:text="Phone:"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailView" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/textborder"
+        android:textColor="#CCBABE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/emailView"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"></EditText>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="330dp"
+        android:layout_height="0.5dp"
+        app:dividerColor="@color/orange"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneEditText"
+        tools:layout_editor_absoluteY="261dp">
+
+    </com.google.android.material.divider.MaterialDivider>
+
+    <TextView
+        android:id="@+id/audiDotSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:text="\u2b24"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screeningSelectionTitle" />
+
+    <TextView
+        android:id="@+id/selectaudittextview"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@drawable/textborder"
+        android:text="    Select auditorium               \u2261"
+        android:textColor="#CCBABE"
+        app:layout_constraintStart_toEndOf="@id/audiDotSign"
+        app:layout_constraintTop_toBottomOf="@id/screeningSelectionTitle"></TextView>
+
+    <TextView
+        android:id="@+id/timeDotSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="42dp"
+        android:text="\u2b24"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/audiDotSign" />
+
+    <TextView
+        android:id="@+id/selectTimetextview"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@drawable/textborder"
+        android:text="    Select Time                         \u2261"
+        android:textColor="#CCBABE"
+        app:layout_constraintStart_toEndOf="@id/timeDotSign"
+        app:layout_constraintTop_toBottomOf="@id/selectaudittextview"></TextView>
+
+    <TextView
+        android:id="@+id/seatsDotSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="\u2b24"
+        android:textColor="#CCBABE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeDotSign" />
+
+    <TextView
+        android:id="@+id/selectseatstextview"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@drawable/textborder"
+        android:text="    Select No' seats                  \u2261"
+        android:textColor="#CCBABE"
+        app:layout_constraintStart_toEndOf="@id/audiDotSign"
+        app:layout_constraintTop_toBottomOf="@id/selectTimetextview"></TextView>
+
+    <Button
+        android:id="@+id/goToChooseSeats"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/modifiedbutton"
+        android:fontFamily="@font/wendy_one"
+        android:padding="5dp"
+        android:text="Select seats"
+        android:textColor="#D55D03"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectseatstextview"
+        tools:layout_editor_absoluteY="514dp" />
+
+    <TextView
+        android:id="@+id/screeningSelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/wendy_one"
+        android:padding="5dp"
+        android:text="Screening selection"
+        android:textColor="#f5821e"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"></TextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="    \u00A9 2022-2023 EA6Cinema. All Rights Reserved.    "
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToChooseSeats" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

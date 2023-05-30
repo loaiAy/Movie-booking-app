@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth</item>
+        <item>@font/amiko</item>
+        <item>@font/underdog</item>
+        <item>@font/yeseva_one</item>
+    </array>
+</resources>
