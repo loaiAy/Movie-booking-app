@@ -12,7 +12,7 @@ Features:
 
 Technical Stack:
 
-Development Environment: Java programming language, Android Studio IDE.
-Backend Database: MySQL for secure and reliable data storage.
-REST API Integration: The app integrates with RESTful APIs to fetch movie listings, including trailers, images and overview.
-XML Data Manipulation: XML is utilized for efficient data manipulation and presentation, ensuring a smooth user interface and seamless data rendering.
+- Development Environment: Java programming language, Android Studio IDE.
+- Backend Database: MySQL for secure and reliable data storage.
+- REST API Integration: The app integrates with RESTful APIs to fetch movie listings, including trailers, images and overview.
+- XML Data Manipulation: XML is utilized for efficient data manipulation and presentation, ensuring a smooth user interface and seamless data rendering.
